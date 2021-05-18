@@ -41,20 +41,20 @@ class TestController extends Controller
   public function elem($index) {
     $data = [
       [
-        'title' => 'titolo 1',
-        'desc' => 'desc 1'
+        'title' => 'Caio Giulio Cesare',
+        'desc' => '"Veni, vidi, vici"'
       ],
       [
-        'title' => 'titolo 2',
-        'desc' => 'desc 2'
+        'title' => 'Lucio Anneo Seneca',
+        'desc' => '"Se un uomo non sa verso quale porto è diretto, nessun vento gli è favorevole"'
       ],
       [
-        'title' => 'titolo 3',
-        'desc' => 'desc 3'
+        'title' => 'Tito Livio',
+        'desc' => '"L`esito corrisponde alle aspettative meno in guerra che in qualunque altro caso"'
       ],
       [
-        'title' => 'titolo 4',
-        'desc' => 'desc 4'
+        'title' => 'Publilio Sirio',
+        'desc' => '"Perdona un`offesa e ne incoraggerai molte"'
       ]
     ];
 
