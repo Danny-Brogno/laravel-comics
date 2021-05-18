@@ -58,8 +58,8 @@ class TestController extends Controller
       ]
     ];
 
-    $elem = $data[$index];
-    return view('pages.element', compact('elem'));
+    $dataIndex = $data[$index];
+    return view('pages.elem', compact('dataIndex'));
 
   } // END OF ELEM FUNCTION
 

@@ -9,7 +9,7 @@
     <ul>
       @foreach ($data as $elements)
       <li>
-        <a href="{{ route('elem', $loop->index) }}">
+        <a href="{{ route('routShowElem', $loop->index) }}">
           {{ $elements['title'] }}
         </a>
       </li>
