@@ -1,1 +1,1 @@
-<h1>FOOTER INUTILE</h1>
+<h1 class="color-yellow">FOOTER INUTILE</h1>

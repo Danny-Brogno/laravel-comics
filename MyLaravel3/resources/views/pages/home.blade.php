@@ -1,21 +1,18 @@
 @extends("Layouts.main-layout")
 
-@section("content")
-  <h1>HELLO WORLD</h1>
-
-
-  <div>
+  @section("content")
+  <section id="home">
 
     <ul>
       @foreach ($data as $elements)
       <li>
         <a href="{{ route('routShowElem', $loop->index) }}">
-          {{ $elements['title'] }}
+          {{ $elements['title'] }} (click me)
         </a>
       </li>
       @endforeach
     </ul>
 
-</div>
 
+</section>
 @endsection

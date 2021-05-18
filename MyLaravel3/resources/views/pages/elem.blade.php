@@ -4,8 +4,7 @@
   <h1>HELLO WORLD</h1>
 
   <div>
-
-    <ul>
+    <ul class="fraseFamosa">
       <h2>{{ $dataIndex["title"] }}</h2>
       <h3>{{ $dataIndex["desc"] }}</h3>
     </ul>
