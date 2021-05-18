@@ -12,10 +12,55 @@ class TestController extends Controller
     $name = "Danny Brogno";
     $records = ["rec_1", "rec_2", "rec_3"];
     return view('vattelapesca', compact('name', 'records'));
-  }
+  } // END OF TESTPAGE FUNCTION
 
   public function home() {
-    return view('pages.home');
-  }
+
+    $data = [
+      [
+        'title' => 'titolo 1',
+        'desc' => 'desc 1'
+      ],
+      [
+        'title' => 'titolo 2',
+        'desc' => 'desc 2'
+      ],
+      [
+        'title' => 'titolo 3',
+        'desc' => 'desc 3'
+      ],
+      [
+        'title' => 'titolo 4',
+        'desc' => 'desc 4'
+      ]
+    ];
+
+    return view('pages.home', compact("data"));
+  } // END OF HOME FUNCTION
+
+  public function elem($index) {
+    $data = [
+      [
+        'title' => 'titolo 1',
+        'desc' => 'desc 1'
+      ],
+      [
+        'title' => 'titolo 2',
+        'desc' => 'desc 2'
+      ],
+      [
+        'title' => 'titolo 3',
+        'desc' => 'desc 3'
+      ],
+      [
+        'title' => 'titolo 4',
+        'desc' => 'desc 4'
+      ]
+    ];
+
+    $elem = $data[$index];
+    return view('pages.element', compact('elem'));
+
+  } // END OF ELEM FUNCTION
 
 }

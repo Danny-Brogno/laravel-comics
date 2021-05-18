@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('paperino', "TestController@testPage");
 
 Route:: get('home', 'TestController@home');
+
+Route::get('/elem/{index}', 'TestController@element')
+-> name('elem');
